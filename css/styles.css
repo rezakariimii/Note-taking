@@ -2,6 +2,13 @@
   text-decoration: line-through;
 }
 .header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999;
+}
+.home-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,22 +19,36 @@
   justify-content: center;
   margin: 2rem auto;
 }
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem auto;
+}
+.home-content p {
+  font-size: 2rem;
+  box-sizing: none;
+  width: 50%;
+}
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
+  gap: .5rem;
 }
 .page {
-  height: 100vh;
+  height: 80vh;
 }
 .table-container {
-  height: 500px;
+  height: 400px;
   overflow-y: auto;
 }
 .footer {
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #999;
 }

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "http-server"
+  },
   "dependencies": {
     "git": "^0.1.5"
   }
