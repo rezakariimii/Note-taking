@@ -1,5 +1,6 @@
 (function () {
   "use strict";
+  
   angular.module("app").controller("TodoCtrl", NoteListController);
   NoteListController.$inject = ["$scope", "$http"];
 
