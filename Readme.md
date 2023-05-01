@@ -1,3 +1,9 @@
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
 #To run Note-taking project locally, you need to follow these steps:
 
 ##Install Node.js
