@@ -1,0 +1,33 @@
+.completed {
+  text-decoration: line-through;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.page {
+  height: 100vh;
+}
+.table-container {
+  height: 500px;
+  overflow-y: auto;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

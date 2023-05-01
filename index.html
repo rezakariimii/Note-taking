@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Note taking</title>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="src/notelist/notelist.module.js"></script>
+  <script src="src/routes.js"></script>
+  <script src="src/notelist/home.controller.js"></script>
+  <script src="src/notelist/notelist.controller.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Note taking App</h1>
+    </header>
+    <div class="page">
+      <ui-view></ui-view>
+    </div>
+  <footer class="footer">
+    <h3>Footer</h3>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+</body>
+</html>
