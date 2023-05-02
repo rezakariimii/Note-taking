@@ -1,12 +1,14 @@
+
 .completed {
   text-decoration: line-through;
 }
 .header {
+  color: white;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #999;
+  background-color: #2c3036;
 }
 .home-header {
   display: flex;
@@ -34,10 +36,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
+  padding: 1rem 0;
   gap: .5rem;
 }
 .page {
+  color: white;
+  background-color: #19344aea;
   height: 80vh;
 }
 .table-container {
@@ -45,12 +50,13 @@
   overflow-y: auto;
 }
 .footer {
+  color: white;
   height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #999;
+  background-color: #2c3036;
 }
 .loading {
   display: flex;
