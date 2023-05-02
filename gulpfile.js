@@ -4,7 +4,7 @@ const cleanCSS = require("gulp-clean-css");
 
 gulp.task("js", function () {
   return gulp
-    .src("./src/notelist/*.js")
+    .src("./js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("./dist/"));
 });
