@@ -1,12 +1,20 @@
 const gulp = require("gulp");
 const uglify = require("gulp-uglify");
 const cleanCSS = require("gulp-clean-css");
+const concat = require('gulp-concat');
 
-gulp.task("js", function () {
-  return gulp.src("./js/*.js").pipe(uglify()).pipe(gulp.dest("./dist/"));
-});
+// gulp.task("js", function () {
+//   return gulp.src("./js/*.js").pipe(uglify()).pipe(gulp.dest("./dist/"));
+// });
 gulp.task("minify-css", function () {
   return gulp.src("./css/*.css").pipe(cleanCSS()).pipe(gulp.dest("dist"));
+});
+
+gulp.task('js', function(){    
+    return gulp.src('./js/*.js')          
+        .pipe(concat('all.js'))       
+        .pipe(uglify())       
+        .pipe(gulp.dest('dist')); 
 });
 
 gulp.task("run", gulp.parallel("js", "minify-css"));

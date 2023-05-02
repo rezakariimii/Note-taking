@@ -1,1 +1,0 @@
-!function(){"use strict";angular.module("app").controller("HomeCtrl",function(){this.message="See Notes!"})}();
