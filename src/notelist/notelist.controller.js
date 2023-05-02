@@ -23,24 +23,28 @@
     }
 
     function addTodo() {
-      $http.post(pathUrl, {
-        title: $scope.newTodoTitle,
-        body: $scope.newTodoBody,
-        completed: false,
-      })
-      .then(function (response) {
-        const newTodo = {
-          id: response.data.id,
-          userId: response.data.userId,
-          title: response.data.title,
-          body: response.data.body,
-          showDescription: false,
-          editing: false,
-        };
-        $scope.todos.push(newTodo);
-        $scope.newTodoTitle = "";
-        $scope.newTodoBody = "";
-      });
+      if (!$scope.newTodoTitle || !$scope.newTodoBody) {
+        $scope.showError = true;
+      } else {
+        $http.post(pathUrl, {
+          title: $scope.newTodoTitle,
+          body: $scope.newTodoBody,
+          completed: false,
+        })
+        .then(function (response) {
+          const newTodo = {
+            id: response.data.id,
+            userId: response.data.userId,
+            title: response.data.title,
+            body: response.data.body,
+            showDescription: false,
+            editing: false,
+          };
+          $scope.todos.push(newTodo);
+          $scope.newTodoTitle = "";
+          $scope.newTodoBody = "";
+        });
+      }
     }
 
     function removeTodo(todo) {
