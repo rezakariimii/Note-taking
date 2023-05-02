@@ -52,3 +52,10 @@
   align-items: center;
   background-color: #999;
 }
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}

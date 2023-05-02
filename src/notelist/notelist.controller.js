@@ -7,6 +7,7 @@
 
   function NoteListController($scope, $http) {
     $scope.todos = [];
+    $scope.loading = true;
     const pathUrl = "https://jsonplaceholder.typicode.com/posts"
 
     function initializeTodos() {
@@ -17,6 +18,7 @@
             item.editing = false;
             return item;
           });
+          $scope.loading = false;
         });
     }
 
